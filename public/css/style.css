@@ -1,0 +1,240 @@
+/* Color invert: https://codepen.io/sosuke/pen/Pjoqqp */
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', sans-serif;
+}
+
+input[type="file"] {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+}
+
+.badge {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.progress {
+    height: 25px;
+}
+
+.trash {
+    filter: invert(15%) sepia(97%) saturate(7490%) hue-rotate(0deg) brightness(116%) contrast(104%);
+}
+
+.bg-red {
+    background-color: red !important;
+}
+
+/* MENU */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3099c7;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav .user {
+    margin: 25px;
+}
+
+.sidenav .user p {
+    color: white;
+}
+
+.sidenav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav .menu li span {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 50% 50%;
+    font-size: 12px;
+    padding: 2% 6%;
+    position: absolute;
+    top: 5px;
+    left: 88px;
+}
+
+.sidenav .menu li {
+    border-top: 1px dashed white;
+    margin-top: 10px;
+    padding: 10px 10px 0px 10px;
+    position: relative;
+}
+
+.sidenav .menu li:last-child {
+    border-bottom: 1px dashed white;
+    padding-bottom: 10px;
+}
+
+.sidenav .menu li a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidenav .menu li a:hover {
+    text-decoration: none;
+}
+
+.sidenav .menu li img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    filter: invert(100%) sepia(22%) saturate(7%) hue-rotate(153deg) brightness(102%) contrast(102%);
+}
+
+.sidenav .versie p {
+    font-size: 12px;
+    color: white;
+}
+
+.main {
+    margin-left: 200px;
+    padding: 50px;
+}
+
+/* TABLES */
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table .thead-dark th {
+    background-color: #3099c7;
+    border-color: #3099c7;
+    color: white;
+}
+
+.actions {
+    width: 80px;
+}
+
+.actions .view {
+    color: black;
+}
+
+.actions .view:hover {
+    color: black;
+}
+
+.actions .delete {
+    color: #ff0000;
+}
+
+.actions .delete:hover {
+    color: #ff0000;
+}
+
+/* OVERZICHTEN */
+.overzicht a {
+    color: inherit;
+}
+
+.overzicht a:hover {
+    text-decoration: none;
+}
+
+.overzicht .card {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    color: #4f4f4f;
+}
+
+.overzicht a:hover .card {
+    background-color: #dedede;
+    border: 1px solid #dedede;
+    color: #4f4f4f;
+}
+
+.overzicht i {
+    font-size: 50px;
+}
+
+/* PAGINATION */
+.pagination li a, .pagination li a:hover {
+    color: black;
+}
+
+/* LOADER */
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border: 16px solid black;
+    border-radius: 50%;
+    border-top: 16px solid white;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 9999;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* BUTTONS */
+.btn-add {
+    background-color: #3099c7;
+    border: 1px solid #3099c7;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-add:hover {
+    color: white;
+}
+
+/* INSTELLINGEN */
+.file-upload {
+    display: none;
+}
+
+/* OVERZICHTEN */
+.overzicht-item {
+    padding: 30px 10px 30px 10px;
+    text-align: center;
+}
+
+.overzicht-item img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%) sepia(22%) saturate(7%) hue-rotate(153deg) brightness(102%) contrast(102%);
+    display: block;
+    margin: 0px auto 10px auto;
+}
+
+.overzicht-item p {
+    margin-bottom: 0px;
+}
